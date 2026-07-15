@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculation operation Assignment</title>
+</head>
+<body>
+    
+
+
+
+
+
+    <script>
+        //Assignment 1
+       
+    let x = Number(prompt("Enter 1st number"));
+    let y = Number(prompt("Enter 2nd number"));
+
+    console.log("Addition:", x + y);
+    console.log("Subtraction:", x - y);
+    console.log("Multiplication:", x * y);
+
+    if (y == 0) {
+        console.log("Number can't be divided by 0");
+    } else {
+        console.log("Division:", x / y);
+    }
+     if (y == 0) {
+        console.log("Number can't be modulus by 0");
+    } else {
+        console.log("modulus:", x % y);
+    }
+        // asignment 2
+
+    // let x = Number(prompt("Enter 1st number"));
+    // let y = Number(prompt("Enter 2nd number"));    
+    if(x>y){
+        console.log("1st number is greater");
+
+    }else if(x<y){
+        console.log("1st number is less than 2nd");
+    }else{
+        console.log("both two numbers are equal")
+    }
+
+
+    //Assignment 3
+    let math = Number(prompt("Enter Math score:"));
+    let science = Number(prompt("Enter Science score:"));
+
+    let eligible = (math >= 90 && science >= 85);
+
+    console.log("Scholarship Eligibility:", eligible);
+  //Assignmnet 4
+    let x = 10;
+
+    console.log("Initial value:", x);
+
+    x += 5;
+    console.log("After adding 5:", x);
+
+    x *= 3;
+    console.log("After multiplying by 3:", x);
+
+    x -= 10;
+    console.log("After subtracting 10:", x);
+
+    x /= 2;
+    console.log("After dividing by 2:", x);
+
+    x %= 3;
+    console.log("After modulus by 3:", x);
+
+    //Assignment 5
+
+    console.log("10 + 3 * 5 =", 10 + 3 * 5);
+
+    console.log("(10 + 3) * 5 =", (10 + 3) * 5);
+
+    console.log("20 / 2 + 3 =", 20 / 2 + 3);
+
+    console.log("20 / (2 + 3) =", 20 / (2 + 3));
+
+    //Assignment 6
+    let length = Number(prompt("Enter length:"));
+    let width = Number(prompt("Enter width:"));
+
+    let perimeter = 2 * (length + width);
+    let area = length * width;
+
+    console.log("Perimeter:", perimeter);
+    console.log("Area:", area);
+
+    console.log("Is perimeter greater than area?", perimeter > area);
+
+    //Assignmnet 7
+    let age = Number(prompt("Enter age:"));
+    let iscitizen = prompt("Are you citizen (true/false)")
+
+    let canvote= (age>=18) && iscitizen;
+    console.log("eligible to vote ",canvote);
+
+</script>    
+</body>
+</html>
