@@ -101,7 +101,41 @@
 
     let canvote= (age>=18) && iscitizen;
     console.log("eligible to vote ",canvote);
+    //Assignment 8
+    let weight=number(prompt("Enter weight(kg)"));
+    let height = number(prompt("Enter height (m)"));
+    let bmi = weight/(height*height);
+    console.log("BMI",bmi);
 
+    if(bmi<18.5){
+        console.log("underweight");
+
+    }else if(bmi >= 18.5 && bmi<24.9){
+        console.log("normal weight")
+    }else if(bmi >=25 && bmi<29.9){
+        console.log("overweight");
+
+    }else{
+        console.log("Obesity");
+    }
+    
+
+    // Assignment 9
+    let num = number(prompt("Enter a number"));
+    if(num % 2=== 0){
+        console.log("this number is even");
+
+    }else{
+        console.log("this number is odd");
+    }
+
+    //Assignment 10
+    let totalAmount = number(prompt("enter taotal amount"));
+    if (totalAmount >100){
+        totalamount -= totalamount * 0.1;
+
+    }
+    console.log("Discounted total :",totalAmount);
 </script>    
 </body>
 </html>
