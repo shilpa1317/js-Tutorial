@@ -39,7 +39,15 @@ for(i=1;i<21;i++){
 }
 //Assignment 5
 
+let sum = 0;
+let num;
 
+do {
+    num = Number(prompt("Enter a number (0 to stop):"));
+    sum = sum + num;
+} while (num !== 0);
+
+console.log("Sum =", sum);
 
 //assignment 6
 for (let i = 1; i <= 50; i++) {

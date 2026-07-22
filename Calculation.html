@@ -101,9 +101,10 @@
 
     let canvote= (age>=18) && iscitizen;
     console.log("eligible to vote ",canvote);
+
     //Assignment 8
-    let weight=number(prompt("Enter weight(kg)"));
-    let height = number(prompt("Enter height (m)"));
+    let weight=Number(prompt("Enter weight(kg)"));
+    let height = Number(prompt("Enter height (m)"));
     let bmi = weight/(height*height);
     console.log("BMI",bmi);
 
@@ -121,7 +122,7 @@
     
 
     // Assignment 9
-    let num = number(prompt("Enter a number"));
+    let num = Number(prompt("Enter a number"));
     if(num % 2=== 0){
         console.log("this number is even");
 
@@ -130,12 +131,16 @@
     }
 
     //Assignment 10
-    let totalAmount = number(prompt("enter taotal amount"));
+    let totalAmount = Number(prompt("enter taotal amount"));
     if (totalAmount >100){
-        totalamount -= totalamount * 0.1;
+        dis=totalAmount * 0.1
+        totalAmount =  ( totalAmount * 0.1)-dis
+        console.log("Discounted total :",totalAmount);
 
+    }else{
+        console.log("no discount!!!")
     }
-    console.log("Discounted total :",totalAmount);
+    
 </script>    
 </body>
 </html>
