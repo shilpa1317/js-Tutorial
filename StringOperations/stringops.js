@@ -83,6 +83,8 @@ console.log(matchSTR)
 
 //program to count no of vowels in string
 
+//count the number of occurance of specific character in a string
+//remove all non-alphanumeric character from a string
 //reverse cgaracter in string withou build in function
 function ReverseString(str){
     let reverse = "";
