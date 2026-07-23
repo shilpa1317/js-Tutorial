@@ -82,10 +82,27 @@ console.log(matchSTR)
 
 
 //program to count no of vowels in string
+function countVowels(str) {
+    let vowels = "aeiouAEIOU";
+    let count = 0;
+
+    for (let i = 0; i < str.length; i++) {
+        if (vowels.includes(str[i])) {
+            count++;
+        }
+    }
+
+    return count;
+}
+
+let text2 = "aei";
+let countOfVowels = countVowels(text2);
+
+console.log(countOfVowels);
 
 //count the number of occurance of specific character in a string
 //remove all non-alphanumeric character from a string
-//reverse cgaracter in string withou build in function
+//reverse character in string without build in function
 function ReverseString(str){
     let reverse = "";
     for (let i= str.length-1;i>=0;i--){
