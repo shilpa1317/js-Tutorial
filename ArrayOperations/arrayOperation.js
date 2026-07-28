@@ -97,6 +97,10 @@ function mergeArray(arr1, arr2) {
 }
 
 console.log(mergeArray(arr1, arr2));
+//2nd method using new Set()
+let arr8=[1,2,3,4,5,6,2,3,4,5]
+unique = new Set(arr8);
+console.log(unique)
 
 //write a program to find frequncy of each element in array
 let arr = [10, 20, 10, 30, 20, 10];

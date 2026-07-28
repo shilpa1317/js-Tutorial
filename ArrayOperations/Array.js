@@ -76,55 +76,6 @@ console.log(largest);
 console.log(second);
 console.log("-----------------------------------------------------------")
 
-//function to mereg twoarraywithou duplicate
-// let arr1 = [11, 43, 99, 45];
-// let arr2 = [23, 11, 95, 45];
-// let result = [];
-
-// function mergeArray(arr1, arr2) {
-//     for (let i = 0; i < arr1.length; i++) {
-//         result.push(arr1[i]);
-//     }
-
-//     for (let i = 0; i < arr2.length; i++) {
-//         if (!result.includes(arr2[i])) {
-//             result.push(arr2[i]);
-//         }
-//     }
-
-//     return result;
-// }
-
-// console.log(mergeArray(arr1, arr2));
-console.log("----------------------------------------------")
-//
-
-let arr = [10, 20, 10, 30, 20, 10];
-
-for (let i = 0; i < arr.length; i++) {
-    let count = 0;
-    
-    for (let j = 0; j < arr.length; j++) {
-        if (arr[i] == arr[j]) {
-            count++;
-        }
-    }
-
-    console.log(arr[i] + " = " + count);
-}
-console.log("----------------------------------")
-let arr1 = [11, 43, 99, 45];
-let arr2 = [23, 11, 95, 45];
-let duplicate = [];
-
-function duplicateArray(arr1, arr2) {
-  
-
-    for (let i = 0; i < arr2.length; i++) {
-        if (arr1.includes(arr2[i])) {
-            duplicate.push(arr2[i]);
-        }
-    }
-    return duplicate;
-}
-console.log(duplicateArray(arr1, arr2))
+let arr8=[1,2,3,4,5,6,2,3,4,5]
+unique = new Set(arr8);
+console.log(unique)
