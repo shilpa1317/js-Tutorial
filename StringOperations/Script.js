@@ -74,8 +74,11 @@ function countSpaces() {
     resultElement.textContent = count;
 }
 function titleCase() {
-     const inputValue = inputElement.value;
-    
+    const inputValue = inputElement.value;
+
+    let result = inputValue.charAt(0).toUpperCase() + inputValue.slice(1);
+
+    resultElement.textContent = result;
 }
 function extractFirstWord(){
     const inputValue = inputElement.value;

@@ -76,6 +76,20 @@ console.log(largest);
 console.log(second);
 console.log("-----------------------------------------------------------")
 
-let arr8=[1,2,3,4,5,6,2,3,4,5]
-unique = new Set(arr8);
-console.log(unique)
+
+let arr1 = [10, 20, 30, 40];
+let arr2 = [30, 40, 50, 60];
+
+function mergeArray(arr1, arr2) {
+    let result = [];
+    for (let i of arr1) {
+        result.push(i);
+    }
+    for (let i of arr2) {
+        if (!result.includes(i)) {
+            result.push(i);
+        }
+    }
+    return result;
+}
+console.log(mergeArray(arr1, arr2));

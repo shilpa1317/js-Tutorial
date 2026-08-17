@@ -1,0 +1,107 @@
+/* Complete page */
+body {
+    background-color: #f5f3ff;
+    font-family: Arial, sans-serif;
+}
+
+/* Main heading */
+h1 {
+    margin-top: 30px;
+    margin-bottom: 35px;
+    font-weight: 600;
+}
+
+/* Form container */
+.container.w-50 {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+/* Labels */
+.form-label {
+    font-weight: 600;
+    color: #4b3f72;
+}
+
+/* Inputs */
+.form-control {
+    border: 1px solid #c9b8e8;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.form-control:focus {
+    border-color: #742d90;
+    box-shadow: 0 0 5px rgba(116, 45, 144, 0.3);
+}
+
+/* Add Task button */
+.btn-primary {
+    background-color: #742d90;
+    border-color: #742d90;
+    border-radius: 8px;
+    padding: 10px;
+    font-weight: 600;
+}
+
+.btn-primary:hover {
+    background-color: #5d2174;
+    border-color: #5d2174;
+}
+
+/* Table */
+.table {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Table heading */
+.table thead {
+    background-color: #742d90;
+    color: white;
+}
+
+.table thead th {
+    padding: 15px;
+}
+
+/* Table body */
+.table tbody td {
+    padding: 13px;
+    vertical-align: middle;
+}
+
+/* Row hover */
+.table tbody tr:hover {
+    background-color: #f1eafa;
+}
+
+/* Action buttons */
+.table .btn {
+    margin-right: 5px;
+    border-radius: 6px;
+}
+
+/* Status */
+.status {
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container.w-50 {
+        width: 90% !important;
+    }
+
+    .table {
+        font-size: 14px;
+    }
+}
