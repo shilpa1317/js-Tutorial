@@ -421,6 +421,13 @@ function renderLikedProducts() {
                         ₹${prod.price}
                     </p>
 
+                                        <button 
+                        class="btn btn-primary"
+                        onclick="addToCart(${prod.id})"
+                    >
+                        Add To Cart
+                    </button>
+
                     <button
                         class="like-btn"
                         onclick="likeProduct(${prod.id})"
@@ -430,6 +437,7 @@ function renderLikedProducts() {
                             class="fa-solid fa-heart liked"
                         ></i>
                     </button>
+                    
 
                 </div>
 
@@ -448,17 +456,12 @@ function likeProduct(productId) {
     const heart = document.querySelector(`#heart-${productId}`);
 
     if (!likedProducts.includes(productId)) {
-
-        // Like
         likedProducts.push(productId);
-
         if (heart) {
             heart.classList.add("liked");
         }
-
     } else {
 
-        // Unlike
         likedProducts = likedProducts.filter(
             (id) => id !== productId
         );
@@ -467,14 +470,10 @@ function likeProduct(productId) {
             heart.classList.remove("liked");
         }
     }
-
-    // LocalStorage update
     localStorage.setItem(
         "b87Likes",
         JSON.stringify(likedProducts)
     );
-
-    // like count update
 if (likeElmt) {
     likeElmt.textContent = likedProducts.length;
 }
