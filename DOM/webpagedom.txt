@@ -1,0 +1,180 @@
+document.body.style.backgroundColor="#D3D3D3";
+'#D3D3D3'
+let heading = document.createElement("h1");
+undefined
+heading.textContent="Welcome to Flower Collection";
+'Welcome to Flower Collection'
+heading.style.color="black";
+'black'
+heading.style.textAlign="center";
+'center'
+ heading.style.fontSize="2.5rem";
+'2.5rem'
+heading.style.marginTop="20px";
+'20px'
+document.body.appendChild(heading);
+<h1 style=​"color:​ black;​ text-align:​ center;​ font-size:​ 2.5rem;​ margin-top:​ 20px;​">​Welcome to Flower Collection​</h1>​
+let img = document.createElement("img");
+undefined
+img.src = "https://www.floralhub.in/cdn/shop/files/HB-TPO_3.png?v=1781247893&width=3840";
+about:blank:1 Loading the image 'https://www.floralhub.in/cdn/shop/files/HB-TPO_3.png?v=1781247893&width=3840' violates the following Content Security Policy directive: "img-src chrome://resources chrome://theme chrome://image chrome://favicon2 chrome://app-icon chrome://extension-icon chrome://fileicon blob: data: 'self'". The action has been blocked.
+'https://www.floralhub.in/cdn/shop/files/HB-TPO_3.png?v=1781247893&width=3840'
+img.src = "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='300'><rect width='100%25' height='100%25' fill='%23f5f5f5'/><text x='50%25' y='55%25' text-anchor='middle' font-size='120'>💐</text></svg>";
+
+img.style.width = "300px";
+img.style.display = "block";
+img.style.margin = "20px auto";
+
+document.body.appendChild(img);
+<img src=​"data:​image/​svg+xml;​utf8,<svg xmlns='http:​/​/​www.w3.org/​2000/​svg' width='300' height='300'><rect width='100%25' height='100%25' fill='%23f5f5f5'/​><text x='50%25' y='55%25' text-anchor='middle' font-size='120'>💐</​text></​svg>" style=​"width:​ 300px;​ display:​ block;​ margin:​ 20px auto;​">​
+document.querySelector("img").remove();
+undefined
+const input = document.createElement("input");
+input.type = "file";
+input.accept = "image/*";
+
+input.onchange = function () {
+    const file = input.files[0];
+
+    const img = document.createElement("img");
+
+    img.src = URL.createObjectURL(file);
+    img.style.width = "300px";
+    img.style.display = "block";
+    img.style.margin = "20px auto";
+
+    document.body.appendChild(img);
+};
+
+input.click();
+undefined
+let para = document.createElement("p");
+undefined
+para.textContent="A flower bouquet is an organized and tied group of fresh, artificial, or dried flowers. People use it as a gift for celebrations, carry it at weddings, or set it on tables as room decor";
+'A flower bouquet is an organized and tied group of fresh, artificial, or dried flowers. People use it as a gift for celebrations, carry it at weddings, or set it on tables as room decor'
+    para.style.color="#301934";
+'#301934'
+    para.style.fontSize="1.2rem";
+'1.2rem'
+    para.style.textAlign="center";
+'center'
+    para.style.maxWidth="600px";
+'600px'
+para.style.lineHeight="1.6";
+'1.6'
+document.body.appendChild(para)
+<p style=​"color:​ rgb(48, 25, 52)​;​ font-size:​ 1.2rem;​ text-align:​ center;​ max-width:​ 600px;​ line-height:​ 1.6;​">​…​</p>​
+let button = document.createElement("button");
+undefined
+button.textContent="click-me";
+'click-me'
+button.sty
+undefined
+button.style.display="block";
+'block'
+button.style.fontSize="1.2rem":
+VM3551:1 Uncaught SyntaxError: Unexpected token ':' (at VM3551:1:31)
+button.style.fontSize="1.2rem";
+'1.2rem'
+button.style.border="none";
+'none'
+button.style.borderRadius="8px";
+'8px'
+button.style.cursor="white";
+'white'
+button.style.cursor="green";
+'green'
+document.body.appendChild(button);
+<button style=​"display:​ block;​ font-size:​ 1.2rem;​ border-width:​ medium;​ border-style:​ none;​ border-color:​ currentcolor;​ border-image:​ none;​ border-radius:​ 8px;​ background-color:​ green;​ color:​ white;​ cursor:​ pointer;​">​click-me​</button>​
+button.style.backgroundColor = "green";
+button.style.color = "white";
+button.style.cursor = "pointer";
+'pointer'
+document.body.appendChild(button);
+<button style=​"display:​ block;​ font-size:​ 1.2rem;​ border-width:​ medium;​ border-style:​ none;​ border-color:​ currentcolor;​ border-image:​ none;​ border-radius:​ 8px;​ background-color:​ green;​ color:​ white;​ cursor:​ pointer;​">​click-me​</button>​
+button.addEventListener("mouseover",func
+VM4183:1 Uncaught SyntaxError: missing ) after argument list (at VM4183:1:37)
+(){
+VM4191:1 Uncaught SyntaxError: Unexpected token ')' (at VM4191:1:2)
+button.addEventListener("mouseover",funcction(){button.style.bacgr
+VM4293:1 Uncaught SyntaxError: missing ) after argument list (at VM4293:1:47)
+button.addEventListener("mouseover",funcction(){button.style.backgroundColor="red"});
+VM4351:1 Uncaught SyntaxError: missing ) after argument list (at VM4351:1:47)
+button.addEventListener("mouseover", function () {
+    button.style.backgroundColor = "red";
+});
+undefined
+button.addEventListener("mouseout", function () {
+    button.style.backgroundColor = "green";
+});
+undefined
+let card= document.createElement("div");
+undefined
+car.style.width="300px";
+VM4541:1 Uncaught ReferenceError: car is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM4541:1
+card.style.width="300px";
+'300px'
+card.style.margin="20px auto";
+'20px auto'
+card.style.padding="20px";
+'20px'
+card.style.borderRadius="12px";
+'12px'
+card.style.boxShadow="0 5px 12px rgba(0,0,0,0.2);
+VM4822:1 Uncaught SyntaxError: Invalid or unexpected token (at VM4822:1:22)
+card.style.boxShadow="0 5px 15px rgba(0,0,0,0.2);
+VM4827:1 Uncaught SyntaxError: Invalid or unexpected token (at VM4827:1:22)
+card.style.boxShadow="0 5px 15px rgba(0,0,0,0.2)";
+'0 5px 15px rgba(0,0,0,0.2)'
+card.style.backgroundColor="yellow";
+'yellow'
+card.sty
+undefined
+card.style.textAlign="center";
+'center'
+document.body.appendChild(card);
+<div style=​"width:​ 300px;​ margin:​ 20px auto;​ padding:​ 20px;​ border-radius:​ 12px;​ box-shadow:​ rgba(0, 0, 0, 0.2)​ 0px 5px 15px;​ background-color:​ yellow;​ text-align:​ center;​ color:​ black;​">​</div>​
+let cardTitle = document.createElement("h2");
+undefined
+cardTitle.textContent="For the love of blooms.";
+'For the love of blooms.'
+card.style.colo
+undefined
+card.style.color="black";
+'black'
+card.appendChild(cardTitle);
+<h2>​For the love of blooms.​</h2>​
+let cardtext= document.createElement("p");
+undefined
+cardtext.text
+undefined
+cardtext.textContent="They are not just flowers; they are patience in bloom.";
+'They are not just flowers; they are patience in bloom.'
+cardtext.style.color="black";
+'black'
+cardtext.style.fontSize="1.rem";
+'1.rem'
+cardtext.style.marginTop="10px";
+'10px'
+card.appendChild(cardtext);
+<p style=​"color:​ black;​ margin-top:​ 10px;​">​They are not just flowers; they are patience in bloom.​</p>​
+document.body.style.display="flex";
+'flex'
+doc
+VM6122:1 Uncaught ReferenceError: doc is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM6122:1
+document.body.style.flexDirection="column";
+'column'
+document.body.style.alignItems="center";
+'center'
+document.body.style.jus
+undefined
+document.body.style.justifyContent="center";
+'center'
+document.body.style.height="100vh";
+'100vh'
+document.body.style.fontFamily="Arial,sans-serif";
+'Arial,sans-serif'

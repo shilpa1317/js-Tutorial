@@ -45,7 +45,6 @@ student.address = {
 console.log("Pincode", student.address.pincode)
 console.log("City", student.address["city"])
 console.log("house number", student["address"]["houseNo"])
-
 student.isCartoon = true
 
 
